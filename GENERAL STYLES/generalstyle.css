@@ -1,0 +1,58 @@
+/* General styles ---*/
+:root{
+  
+    --background_color: #000;
+    --button_color: #f06525;
+    --active_button: #fc0808;
+    --hover_color: #fa2104;
+    --body_color: #ffffff;
+    --text_color: #fa3a18;
+    --text_color_two: #ffffff;
+    --progress_bar: #fd3f05;
+
+    /*container width reposive */
+
+    --container_lg: 95%;
+    --containder_md: 98%;
+    --container_sm: 100%;
+   
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    
+} 
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+
+
+.btn {
+    background-color: var(--button_color);
+    width: auto;
+    height: auto;
+    padding: 10px 30px;
+    border-radius: 23px;
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+   
+}
+
+.btn:hover{
+    background: var(--hover_color);
+    cursor: pointer;
+}

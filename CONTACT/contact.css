@@ -1,0 +1,404 @@
+/* ==================================contact section===============================================
+ */
+
+ .contactcon{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--background_color);
+    padding: 1rem;
+    margin-top: .1rem;
+  }
+  
+  
+  .contactcon .title:before{
+    content: attr(data_title);
+        color: var(--text_color_two);
+       margin-top: 2rem;
+       text-align: center;
+       display: block;
+       font-weight: 800;
+       letter-spacing: 3.2px;
+       font-size: 2rem;
+       text-transform: uppercase;
+    }
+  .contactcon .title:after{
+    content: "";
+    background:  var(--hover_color);
+    height: .4rem;
+    width: 10.8rem;
+    position: absolute;
+    margin: 0rem auto;
+    border-radius: 5px;
+    left: 47%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1)
+  }
+  
+  .contact{
+      width: 100%;
+      height: 148vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      margin: 0 auto;
+  }
+  
+  .repo_container{
+    width: 99%;
+    gap: 2rem;
+    height: 144vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 0.7rem;
+  }
+  
+  
+  .contact_info{
+     display: flex;
+     flex-direction: column;
+     width: 37rem;
+     height: 50rem;
+     padding: 1rem;
+     background: white;
+     border-radius: 1rem;
+     align-items: center;
+     justify-content: center;
+  }
+  
+  .contact_inputs{
+    width: 37rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+  
+  
+  .contact_info p{
+    line-height: 2em;
+    text-align: center;
+  }
+  
+  .contact_info_lines{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 90%;
+      height: 20rem;
+      color: white;
+      background-color: var(--background_color);
+      word-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      margin-top: 1rem;
+      border-radius: 3rem;
+  }
+  
+  .button_cover{
+      height: 3.6rem;
+      width: 3.6rem;
+      background: var(--active_button);
+      border-radius: 50%;
+      text-align: center;
+  }
+  
+  .button_cover i{
+    line-height: 61px;
+    font-size: 1.5rem;
+    
+  }
+  
+  .info_text{
+    font: 1.3rem;
+    display: inline-block;
+  }
+  
+  .contact .btn{
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    margin: 1rem auto;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .input_wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: -3rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .contact input{
+      width: 25rem;
+      max-width: 40rem;
+      height: 3rem;
+      background: var(--text_color);
+      border-radius: 1rem;
+      border: 3px solid white;
+      cursor: pointer;
+      padding-left: 1rem;
+      color: var(--text_color_two);
+      transition: 600ms ease-in-out;
+      margin-bottom: 2rem;
+  }
+  
+  input:hover{
+    background-color: var(--background_color);
+    color: var(--text_color_two);
+    border: 3px solid var(--text_color_two);
+  }
+  
+  .contact input:focus{
+    background-color: var(--background_color);
+    outline: 4px solid deepskyblue;
+    color: white;
+    padding-left: 1rem;
+  
+  }
+  
+  input::placeholder{
+    color: var(--text_color_two);
+  }
+  .contact textarea{
+      width: 27rem;
+      height: 14rem;
+      padding: 3rem;
+      background: var(--text_color_two);
+      border-radius:  2rem;
+      /* border: 5px solid var(--hover_color); */
+      resize: none;
+      cursor: pointer;
+      color: var(--background_color);
+  }
+  
+  textarea::placeholder{
+      font-size: 1rem;
+      color: var(--background_color);
+  }
+  
+  textarea:focus{
+    outline: 4px solid deepskyblue;
+    padding-left: 1rem;
+  
+  }
+  
+  
+  @media screen and (max-width: 1024px){
+  .contactcon{
+    margin-top: .1rem;
+    width: 100%;
+    height: 60rem;
+  }
+  
+  .contactcon .title:before{
+    margin-top: 0.2rem;
+  }
+  
+  
+  
+  .contact{
+    height: 100%;
+    width: 100%;
+    gap: 2rem;
+  }
+  
+  .repo_container{
+    width: 96%;
+    height: 45rem;
+  }
+  
+  .contact_info{
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 45rem;
+  }
+  
+  .contact_inputs{
+    width: 25rem;
+    height: 45rem;
+  }
+  
+  
+  
+  .contact_inputs input{
+    margin-bottom: 2em;
+    width: 24rem;
+  }
+  .contact_inputs textarea{
+    width: 22rem;
+    height: 14rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    }
+  
+    .contact_info_lines{
+      width: 90%;
+      height: 20rem;
+    }
+  
+    .contact_info_lines p{
+      text-align: left;
+      margin-left: 0.2rem;
+  }
+  
+  }
+  
+  
+  @media screen and (max-width: 1000px){
+    .contactcon{
+      width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    }
+  
+    .contactcon .title:before{
+      font-size: 1.3rem;
+      margin-top: -0.8rem;
+    }
+  
+    
+  .contactcon .title:after{
+      width: 5rem;
+      left: 36%;
+  }
+  
+  .contact{
+   display: flex;
+    height: fit-content;
+    width: 92%;
+  }
+  
+  .repo_container{
+    height: fit-content;
+    width: 91%;
+  }
+  
+  .contact_info{
+    height: 25rem;
+    padding: 2rem;
+    width: 40rem;
+  }
+  
+  .contact_info p{
+    text-align: center;
+  }
+  
+   .contact_inputs{
+   width: 40rem;
+  
+   }
+  
+   .contact_info_lines{
+     width: 20rem;
+     aspect-ratio: 1/1;
+   }
+  
+   .contact_inputs input{
+    margin-bottom: 1rem;
+    width: 30rem;
+    max-width: 27rem;
+   }
+  
+   .contact_inputs textarea{
+     width: 20rem;
+     max-width: 36rem;
+   }
+  
+   .contact_info_lines p{
+    text-align: left;
+    margin-left: 0.2rem;
+  }
+  
+  }
+  
+  @media screen and (max-width: 600px){
+    .contactcon{
+      width: 100%;
+      height: 82rem;
+      padding-top: 2rem;
+    }
+  
+    .contact{
+      width: 99%;
+      height: 80rem;
+      padding: 0;
+    }
+  
+    .repo_container{
+      width: 100%;
+      padding: 0.5rem;
+      height: 79rem;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .contact_info{
+      width: 100%;
+      height: fit-content;
+      padding: 0.3rem;
+    }
+    .contact_inputs{
+      width: 100%;
+      padding: 1.5rem 0.5rem;
+      margin-top: -23rem;
+      height: fit-content;
+    }
+  
+    .contact_inputs textarea{
+      width: 14rem;
+      padding: 1rem 10px;
+      border-radius: 1rem;
+    }
+  
+    .contactcon .title:before{
+      font-size: 0.8rem;
+      margin-top: -1.8rem;
+    }
+  
+    
+  .contactcon .title:after{
+      width: 5rem;
+      left: 40%;
+  }
+  
+    .contact_inputs input{
+      margin-bottom: 1rem;
+      width: 15rem;
+      max-width: 24rem;
+     }
+  
+  
+    .contact_info_lines{
+      width: 100%;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 2rem;
+  }
+  
+  .contact_info_lines p{
+        text-align: left;
+        margin-left: 0.2rem;
+    }
+    .contact_info_lines div i{
+      font-size: 1rem;
+    }
+  }
+
+  /* ends */

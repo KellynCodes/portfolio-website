@@ -1,0 +1,301 @@
+/* <===============================navbar=============================> */
+
+
+.navcon{
+    
+    background-color: var(--background_color);
+    width: 100%;
+    padding: 1rem;
+    height: 7rem;
+    border-bottom: 1px solid #fff;
+}
+
+
+
+/* FLOATING NAVBAR STYLES */
+.class{
+    display: flex;
+    background:transparent;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    z-index: 999;
+}
+
+.class  .navlink{
+    margin: 0 auto ;
+    width: 55rem;
+    background:linear-gradient(to right, deepskyblue, var(--background_color), var(--hover_color), deepskyblue);
+    height: 5rem;
+    border-radius: 3rem;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+   transform: translateY(100%);
+   transition: transform 1s;
+   z-index: 999;
+}
+
+.active .navlink{
+    transform: translateY(-1%);
+}
+
+ .navlink .btnv{
+    background-color: var(--button_color);
+    width: auto;
+    height: auto;
+    padding: 10px 18px;
+    border-radius: 23px;
+    display: inline-block;
+    transition: 700ms ease-in-out;
+    z-index: 999;
+    bottom: 0;
+}
+
+ .navlink .btnv:hover{
+    background: var(--background_color);
+}
+
+.navlink .clicked .btnv{
+    background-color: var(--background_color);
+}
+
+.class div i{
+    font-size: 1.2rem;
+}
+
+
+/* END OF FLOATING NAVBAR */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.navbar .navlinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+} 
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 6rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.logo h1{
+    color: var(--button_color);
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 1.5s ease-in-out;
+}
+.log h1:hover{
+    background: var(--hover_color);
+}
+
+.navbar .navlinks li{
+    list-style-type: none;
+    
+}
+
+.navbar .navlinks .hire_me{
+    background-color: var(--body_color);
+    width: auto;
+    height: auto;
+    padding: 10px 30px;
+    border-radius: 23px;
+    display: inline-block;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.navbar .navlinks .active{
+    background-color: var(--active_button);
+    width: auto;
+    height: auto;
+    padding: 10px 30px;
+    border-radius: 23px;
+    display: inline-block;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.navlinks .active:hover{
+    background-color: var(--hover_color);
+}
+
+
+.navlinks .btn {
+    background-color: var(--button_color);
+    width: auto;
+    height: auto;
+    padding: 10px 30px;
+    border-radius: 23px;
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+   
+}
+
+ .navlinks .btn:hover{
+    background: var(--hover_color);
+    cursor: pointer;
+}
+
+
+
+
+/* <!-----===========navbar resposive===========--!> */
+
+@media screen and (max-width: 1024px){
+    .navcon{
+        width: 100%;
+       
+        }
+
+
+        .navbar .navlinks{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+        } 
+
+}
+
+@media screen and (max-width: 1000px){
+
+.navcon{
+    top:0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+
+    .navbar .navlinks{
+        flex-direction: column;
+        top: 100%;
+        right: 0;
+        height: 100vh;
+        background: white;
+        border-radius: 0 0 1rem 1rem;
+        width: 0;
+        position: absolute;
+        transition: 900ms;
+        overflow-y: scroll;
+    }
+
+     .open .navlinks{
+        width: 50vw;
+    
+    }
+
+
+    .navbar  .btn{
+        display: none;
+        opacity: 0;
+        transition: 1s ease-in-out;
+    }
+    .navbar.open .btn{
+        margin-top:  -5rem;
+        display: block;
+        opacity: 1;
+    }
+
+     .navlinks .hire_me{
+        display: none;
+    }
+
+    .navbar .navbar_toggle{
+        right: 15%;
+        position: absolute;
+    }
+
+.navbar .navbar_toggle .bar{
+display: block;
+background: white;
+height: 4px;
+width: 2rem;
+margin-top: 5px;
+transition: 1s;
+z-index: 10;
+cursor: pointer;
+}
+
+.navbar_toggle.active .bar:nth-child(1){
+    transform: translateY(9px) rotate(45deg);
+}
+
+.navbar_toggle.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.navbar_toggle.active .bar:nth-child(3){
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+
+
+    .navbar{
+        justify-content: space-between;
+    }
+   
+    
+}
+
+@media screen and (max-width: 800px){
+    .logo h1{
+        font-size: 2rem;    
+            margin-left: 1.1rem;
+        
+        }
+}
+
+@media screen and (max-width: 600px){
+.class{
+width: 100%;
+}
+
+    .class .navlink{
+       background: #ccc;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 18rem;
+       height: 4rem;
+       margin-top: -1rem;
+       position: sticky;
+       gap: 2px;
+       margin: 0 auto;
+    }
+
+    .navlink .btnv{
+        font-size: 0.5rem;
+        padding: 0.5rem;
+        margin: 0 0.5rem;
+        background-color: black;
+    }
+
+
+    .logo img{
+        width: 4rem;
+    }
+}
