@@ -78,8 +78,11 @@ margin:1rem;
 }
 
  .socials a:hover{
-    background: black;
-   
+    background: #ffffff;
+}
+
+.socials a:nth-child(1):hover{
+    background: radial-gradient(#050505, #ffffff )
 }
 
 
