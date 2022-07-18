@@ -2,11 +2,11 @@
 
 .header{
     margin-top: .2rem;
-    width: 90%;
+    width: 100%;
     height: fit-content;
-   background: url("../Assets/hero_bg_image.png")  center center;
-   background-size: contain;
-   min-height: 150vh;
+    background: url("../Assets/hero_bg_image.png")  center center;
+    background-size: contain;
+    min-height: 140vh;
     padding: 4rem 1rem;
 }
 
@@ -34,7 +34,7 @@
     align-items: center;
     justify-content: center;
     width: 90%;
-    height: 96%;
+    height: 93%;
     margin-left: 6rem;
 }
 
@@ -68,9 +68,8 @@ text-align: center;
 }
 
 .header_right{
-  
     width: 90%;
-    height: 96%;
+    height: 93%;
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -85,6 +84,7 @@ text-align: center;
     background: none;
     opacity: 1;
     box-shadow: 0px 2px 3px 5px rgba(0,0,0,0.5);
+    object-fit: cover;
 }
 
 
@@ -96,13 +96,7 @@ text-align: center;
     }
 
     .header_left{
-        width: 25rem;
-        height: 45rem;
         margin-left: 2rem;;
-    }
-    .header_right{
-        width: 30rem;
-        height: 46rem;
     }
 }
 @media(max-width: 1000px){
@@ -131,6 +125,7 @@ text-align: center;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 88%;
    
     }
 
@@ -140,11 +135,10 @@ text-align: center;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 88%;
     }
 
-    .header_right .header_image{
-        width: 25rem;
-    }
+  
 
     .header_left h5, h4{
         text-align: center;
@@ -177,20 +171,31 @@ text-align: center;
 
 @media screen and (max-width: 600px){
     .container{
-        padding: 0;
+        padding: 1rem 0 0 0;
     }
 
     .header{
         padding: 0;
+        height: fit-content;
     }
 
     .header_right{
         width: 100%;
+        padding: 0.5rem;
+    }
+
+    .header_left{
+        padding-top: 5rem;
+        height: fit-content;
+    }
+
+    .header .header_left .text{
+        width: 18rem;
     }
 
     .header_right .header_image{
-        width: 18em;
-        height: 30rem;
+        width: 100%;
+        height: 32rem;
     }
 
      .logo h1{

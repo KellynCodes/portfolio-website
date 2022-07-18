@@ -1,0 +1,138 @@
+/*  -GENERAL STYLES--*/
+
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
+
+/* ADDTIONAL CSSS FILES */
+@import url(about.css);
+@import url(contact.css);
+@import url(header.css);
+@import url(navbar.css);
+@import url(services.css);
+@import url(footer.css);
+@import url(portfolio.css);
+
+:root{
+    /* COLOR VARIABLES */
+    --darktheme: #ffffff;
+    --background_color: #000000;
+    --button_color: #f06525;
+    --active_button: #fc0808;
+    --hover_color: #fa2104;
+    --body_color: #ffffff;
+    --text_color: #fa3a18;
+    --text_color_two: #ffffff;
+    --progress_bar: #fd3f05;
+    
+    
+    /* VARIABLE FONT FAMILIES */
+    --font-family-sans-serif: cera-round-pro, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    --font-family-serif: fa-livory, "Georgia", "Times New Roman", "Times", serif;
+    --font-family-monospace: "Menlo", "Monaco", "Consolas", "Courier New", monospace;
+    
+    /* BOX SHADOW VARIABLES */
+    --box_shadow: 0 0 0 .25rem rgba(96, 217, 238, 0.493);
+    --box_shadow2: 0 0 10px rgba(0,0,0,0.5);
+    --box_shadow3: 0 0 10px rgba(231, 64, 64, 0.767);
+
+    /*container width reposive */
+    --container_lg: 95%;
+    --containder_md: 98%;
+    --container_sm: 100%;
+   
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: poppins;
+    background: var(--background_color);
+    transition: 1.3s;
+} 
+
+.scroll_pause{
+    overflow-y: hidden;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+
+
+.btn {
+    background-color: var(--button_color);
+    width: auto;
+    height: auto;
+    padding: 10px 30px;
+    border-radius: 23px;
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+   
+}
+
+.btn:hover{
+    background: var(--hover_color);
+    cursor: pointer;
+}
+
+.darktheme{
+    background: var(--darktheme);
+}
+
+/*===================PRELOADER ANIMATION=============================*/
+.preloader{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.preloader h1{
+    color: white; position:absolute; z-index: 999;
+}
+.spinner-border{
+    display:inline-block;
+    width:2rem;
+    height:2rem;
+    vertical-align:-.125em;
+    border:.25em solid var(--hover_color);
+    border-right-color:transparent;
+    border-radius:50%;
+    -webkit-animation:.75s linear infinite spinner-border;
+    animation:.75s linear infinite spinner-border;
+    z-index: 999;
+}
+
+@-webkit-keyframes spinner-border{
+    0%{
+        transform:rotate(360deg);
+        width:2rem;
+        height:2rem;
+    }
+    50%{
+        width: 3rem;
+        height: 3rem;
+    }
+   
+
+}
+
+@media (max-width: 600px){
+    .preloader h1{
+        font-size: 1.5rem;
+    }
+}

@@ -12,42 +12,45 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <!-- section css -->
     <link rel="stylesheet" href="generalstyle.css">
-<link rel="stylesheet" href="../NAVBAR/navbar.css">
-<link rel="stylesheet" href="../HEADER/header.css">
-<link rel="stylesheet" href="../SERVICES/services.css">
-<link rel="stylesheet" href="../ABOUT/about.css">
-<link rel="stylesheet" href="../CONTACT/contact.css">
-<link rel="stylesheet" href="../FOOTER/footer.css">
 </head>
-<body>
+<body class="scroll_pause">
+  
+  <!-- PRELOADER CODES -->
+
+  <div class="preloader">
+    <h1>KellynCodes.com</h1>
+  <div class="spinner-border"></div>
+  </div>
+
+  <!--END OF PRELOADER CODES -->
 
   <!--side bar toggle on scroll--->
 
   <div class="class">
   <div class="navlink">
-    
-        <a class="btnv" href="#home"><i class="bi bi-house-fill"></i></a>
-    
-      <a class="btnv" href="#about"><i class="bi bi-person-circle"></i></a>
-    
       
-        <a class="btnv" href="#services"><i class="bi bi-activity"></i></a>
+      <a class="btnv btn1" href="#home"><i class="bi bi-house-fill"></i></a>
+    
+      <a class="btnv btn3" href="#services"><i class="bi bi-activity"></i></a>
       
-      <a class="btnv" href="#portfolios"><i class="bi bi-stickies-fill"></i></a>
+      <a class="btnv btn2" href="#about"><i class="bi bi-person-circle"></i></a>
     
-      <a class="btnv" href="#contact"><i class="bi bi-telephone-fill"></i></a>
-    
+     <a class="btnv btn4" href="#portfolios"><i class="bi bi-stickies-fill"></i></a>
+  
+    <a class="btnv btn5" href="#contact"><i class="bi bi-telephone-fill"></i></a>
+  
     </div>
 </div>
 
 
-   <section id="home" class="navcon">
+   <section class="navcon">
       <nav id="nav_menu"   class="navbar">
           <div class="logo">
             <img src="../ASSETS/logo.jpg" alt="Logo">  <h1>ellynCodes</h1>
           </div>
           
           <ul id="nav_menus" class="navlinks">
+        <div class="navlinks_cont">
               <li class="btn active">
                   <a href="#home">Home</a>
                 </li>
@@ -63,6 +66,7 @@
               <li class="btn">
                 <a href="#contact">Contact</a>
                 </li>
+    </div>
            
           </ul>
 
@@ -71,14 +75,19 @@
             <span class="bar"></span>
             <span class="bar"></span>
           </div>
-       
+       <div class="darkbg">
+        <div class="darkbgbtn">
+          <i class="bi bi-moon-fill"></i>
+          <i class="bi bi-brightness-high-fill"></i>
+        </div>
+       </div>
       </nav>
   </section>
 
 
 
 <!-- header section -->
-<section  class="container">
+<section id="home" class="container background">
   <div class=" header grid">
 
     <div class="header_left">
@@ -87,17 +96,16 @@
       </h1>
       <p class="text">
         Hello, <br> I am kelly, by name and a web designer and developer by profession.
-        I design good looking and reponsive websites that willl suit all devices. </p> <br>
+        I design good looking, dynamic and  responsive websites that will suit many devices depending on their screen size. </p> <br>
         <h4>Most considerably: </h4>
         <p class="p2">I design with an affordable price.</p>
       <br>
       <h5>Click on the button bellow to Download my CV</h5><br>
-      <a href="../ASSETS/logo.jpg" download="" class="btn">Download CV</a>
-      
+      <a href="ASSETS/kellyncodes-resume1.pdf" download class="btn">Download CV</a>      
     </div>
 
     <div class="header_right">
-      <img src="../ASSETS/headerpicfb-removebg-preview.png" alt="MY profile Pics" class="header_image">
+      <img src="ASSETS/headerpicfb-removebg-preview.png" alt="MY profile Pics" class="header_image">
     </div>
   </div>
 </section>
@@ -112,7 +120,7 @@
       <div class="card_wrapper">
           <div class="cards">
               <h2>Web Design</h2>
-              <p>Two years expirience in web Design. How you want it is my concern</p>
+              <p>3+ years of experience in web Design. How you want it is my concern</p>
               <a class="btn" href="#contact">Hire Me</a>
               <div class="services_socials">
               
@@ -128,8 +136,8 @@
 
           <div class="cards">
               <h2>Web Development</h2>
-              <p>A year and months of expirience in web development. Handled more than 10 projects.
-                My code makes web apps interactive and Dynamic.
+              <p>2+ years of expirience in web development. Handled more than 10 projects.
+                Specialized in building interactive and Dynamic web apps.
               </p>
               <a class="btn" href="#contact">Hire Me</a>
 
@@ -214,32 +222,49 @@
   <h1 class="about_title title"  data_title="About">
   </h1>
 
-  <div class="about grid">
-  
+  <p class="ptext">
+    <b>Senior FrontEnd and Junior BackEnd developer with 3+ Years of expirience in frontEnd web development and 6 months of expirience in BackEnd web development. Specialized in building complex web application designs. Archieved 70% user satisfaction and 80% client demands through the creation of interactively tested, data-driven and centered designes and Development. Looking to leverage my skills to bring more user expirience and monetized improvement to my clients.  </p>
 
-    <div class="about_left">
-      <p class="text">
-        <b> Hello,</b> <br> I am kelly, by name and a web designer and developer by profession.
-        I design good looking and reponsive website that willl suit all devices.  </p>
-
-        <div class="about_description">
-        <h5>expirience:</h5>
-        <small>One year and six months of expirience.</small>
+     <div class="more_desc">
+      <div class="about_description">
+        <h5>experience:</h5>
+        <small class="small">With my few years of expirience and hard work i was able to build and Ecommerce Website, Blog website, Chatting App, Banking App and many More.</small>
         <h4 class="work">Your work is just to imagine it and i will do the design and development.</h4>
       </div>
+
+      <div class="right_desc">
+        <p>I do work as a freelancer, and also enthusiastic in working in a company.</p>
+        <p>I will get Your work done just as you want it.</p>
+
+        <ul> 
+          <li class="text">I am a freelancer. </li>
+          <li class="text"> A Designer. </li>
+           <li class="text">A Developer.</li>
+        </ul>
+       </div>
+
+     </div>
+
+
+  <div class="about grid">
+   
+
+    <div class="about_left">
+    
+     
     
       <div class="skills_wrapper">
         <div class="skills">
             <i class="bi bi-filetype-html"></i>
           <h1>HTML</h1>
-          <small>Expirienced</small>
+          <small>Experienced</small>
           <em>90%</em>
         </div>
 
         <div class="skills">
             <i class="bi bi-filetype-css"></i>
           <h1>CSS</h1>
-          <small>Expirienced</small>
+          <small>Experienced</small>
           <em>80%</em>
         </div>
 
@@ -263,28 +288,97 @@
           <small>Intermediate</small>
           <em>50%</em>
         </div>
-      </div>
+
+
+        <div class="skills">
+          <i class="bi bi-filetype-jsx"></i>
+        <h1>REACT</h1>
+        <small>Intermediate</small>
+        <em>50%</em>
+            </div>
+    
+         </div>
       
-
       </div>
-
-
 
     <div class="about_right">
-      <div class="about_right_wrapper">
-      <ul> 
-        <li>I am a freelancer </li>
-        <li> A Designer </li>
-         <li>A Developer</li>
-      </ul>
-      <img src="../Assets/aboutpics2.jpg" alt="">
-    </div>
+     
+      <img class="about_img" src="../Assets/headerpicfb-removebg-preview.png" alt="">
      </div>
   </div>
 </section>
+<!-- end of about section-->
+
+<!--======================================== Portfolio section ====================================-->
+<section id="portfolios">
+  <div class="portfolio">
+    <h1>PORTFOLIOS</h1>
+
+   <div class="portfolio_content">
+
+    <div class="ports">
+     <div class="port_img_container">
+       <img src="assets/portfolio1.PNG" alt="">
+     </div>
+
+     <div class="port_img_container">
+      <img src="assets/portfolio1.1.PNG" alt="">
+     </div>
+
+     <div class="port_img_container">
+           <img src="assets/portfolio1.2.PNG" alt="">
+     </div>
+    </div>
+
+    <div class="ports">
+     <div class="port_img_container">
+       <img src="assets/banking-system2.PNG" alt="">
+     </div>
+
+     <div class="port_img_container">
+      <img src="assets/banking_system-send.PNG" alt="">
+     </div>
+
+     <div class="port_img_container">
+           <img src="assets/banking_system_deposit.PNG" alt="">
+     </div>
+    </div>
+
+    <div class="ports">
+     <div class="port_img_container">
+       <img src="assets/enugutechhub.PNG" alt="">
+     </div>
+
+     <div class="port_img_container">
+      <img src="assets/enugutechhub2.PNG" alt="">
+     </div>
+
+     <div class="port_img_container">
+           <img src="ASSETS/enugutechhub3.PNG" alt="">
+     </div>
+    </div>
+
+    <div class="ports">
+     <div class="port_img_container">
+       <img src="assets/portfolio1.PNG" alt="">
+     </div>
+
+     <div class="port_img_container">
+      <img src="assets/portfolio1.1.PNG" alt="">
+     </div>
+
+     <div class="port_img_container">
+           <img src="assets/portfolio1.2.PNG" alt="">
+     </div>
+    </div>
+    
+    </div>
+  </div>
+</section>
+
+
 
   <!-- contact session -->
-
   <section id="contact" class="contactcon">
     <h1 class="contact_title title"  data_title="Get IN Touch">
     </h1>
@@ -296,9 +390,11 @@
          Contact me with either Address, Email or Phone number bellow.
        </p>
        <div class="contact_info_lines">
+         <div class="contact_info_container">
         <div class="button_cover"><i class="bi bi-geo-alt-fill"></i></div><p class="info_text">Nsukka, Enugu Nigeria</p>
-        <div class="button_cover"><i class="bi bi-envelope-check-fill"></i></div><p class="info_text">kellyrobot247@gmail.com</p>
+        <div class="button_cover"><i class="bi bi-envelope-check-fill"></i></div><p class="info_text">kellyncodes@gmail.com</p>
         <div class="button_cover"><i class="bi bi-telephone-inbound-fill"></i></i></div><p class="info_text">09157060998</p>
+      </div>
        </div>
 
      </div>
@@ -306,7 +402,7 @@
   action="https://formspree.io/f/xdobblbp" method="POST" class="contact_inputs">
         <div class="input_wrapper">     
        <input type="text" name="name" placeholder="Name" required>
-      <input type="text" name="email" placeholder="Email or phone " required>
+      <input type="text" name="email" placeholder="Email" required>
       <input type="number" name="number" placeholder="Your Phone (+2349157060998)" required>
       <input type="text" name="country" placeholder="Your Country" required>
     </div>
@@ -324,7 +420,7 @@
 
     <div class="about">
       <h2>About</h2>
-       <p>Born and brought up in Nigeria, currently leaving at Nsukka, Nigeria. A year and  6 months of expirience in this field. </p>  
+       <p>Born and brought up in Nigeria, currently leaving at Nsukka, Nigeria. 3 years and  6 months of expirience in this field. </p>  
     </div>
     <div class="links_services">
 <div class="links">
@@ -342,14 +438,14 @@
   <ol>Web Design</ol>
   <ol>Web Development</ol>
   <ol>Graphics Design</ol>
-  <ol>App Development</ol>
-  <ol>Marketing</ol>
+  <ol>UI/UX Design</ol>
+  <ol>Web Maintainance</ol>
 </ul>
   </div>
 </div>
 <div class="socials">
   <h3>  Follow Me</h3>
-  <p>You can follow me on the social medias bellow to receive more information and stuffs about me</p>
+  <p>You can follow me on these platforms bellow to receive more information and stuffs about. Click on any of the ICONS</p>
   <div class="social_links">
     <a href="https://github.com/prokelly" target="_blank"><i class="bi bi-github"></i></a>
     <a href="https://dribbble.com/KellynCodes" target="_blank"><i class="bi bi-dribbble"></i></a>
@@ -372,6 +468,6 @@
 
 
   <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../GENERAL STYLES/generalstyle.js"></script>
+    <script src="generalstyle.js"></script>
 </body>
 </html>
