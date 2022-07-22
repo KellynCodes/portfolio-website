@@ -1,0 +1,186 @@
+/* <=============services================> */
+.services{
+    height: fit-content;
+    padding: 1rem;
+    margin-top: .1rem;
+    width: 100%;
+    height: 100rem;
+    border-bottom: 3px solid black;
+}
+
+
+.services .title:before{
+    content: attr(data_title);
+        color: var(--text_color);
+       margin-bottom: 2rem;
+       text-align: center;
+       display: block;
+       font-weight: 800;
+       letter-spacing: 3.2px;
+       font-size: 1.8rem;
+       text-transform: uppercase;
+    }
+.services .title:after{
+    content: "";
+    background: white;
+    height: 10px;
+    width: 7.8rem;
+    position: absolute;
+    margin: -2rem auto;
+    border-radius: 5px;
+    left: 45.5%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000000;
+}
+
+
+ .card_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+    width: 95%;
+    height: 100%;
+    gap: 2rem;
+    
+ }
+.cards{
+    width: 20rem;
+    height: 25rem;
+    background: transparent;
+    border: 2px solid white;
+    word-wrap: wrap;
+    padding: 2.3rem 1rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    align-items: center;
+    cursor: default;
+    transition: 900ms;
+    overflow: hidden;
+}
+
+.services_socials{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    left: -100%;
+    background-color: deepskyblue;
+    border-radius: 0 1rem 1rem 0;
+    width: 3.5rem;
+    height:  17rem;
+    transition: 500ms;
+}
+
+.cards:hover .services_socials{
+ left: 0;
+}
+
+.cards .services_socials a{
+    font-size: 1.6rem;
+    color: rgb(0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cards .services_socials a:hover{
+    background-color: white;
+    border-radius: 500%;
+    width: 2.5rem;
+    aspect-ratio: 1/1;
+}
+
+.cards:hover{
+    box-shadow: 1px 2px 10px rgba(255, 255, 255, 0.877);
+    transform: scale(1.04);
+    background-color: black;
+    color: white;
+}
+
+.cards  p{
+    text-align: center;
+    margin: 2rem;
+    color: var(--text_color_two);
+    line-height: 1.5rem;
+}
+.cards h2,h4{
+font-size: 1.2rem;
+color: orangered;
+text-align: center;
+margin-bottom: 1rem;
+}
+
+.cards .btn {
+    color: whitesmoke;
+    background: orangered;
+    height: auto;
+    width: auto;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 1.1rem;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px){
+    .services{
+        width: 100%;
+        height: 91rem;
+    }
+    .card_wrapper{
+        width: 50rem;
+        height: 80%;
+        margin: auto;
+    }
+    
+}
+
+@media screen and (max-width: 1000px){
+    .services{
+         height: fit-content;
+    }
+
+    .services .title:after{
+        left: 41.8%;
+    }
+        .card_wrapper{
+            width:100%;
+        }
+
+    
+}
+
+@media screen and (max-width: 600px){
+    .services{
+        height: 180rem;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .services .title:before{
+        font-size: 1rem;
+    }
+    .services .title:after{
+        width: 4rem;
+        left: 40%;
+    }
+
+    .card_wrapper{
+        width:100%;
+        height:170rem;
+    }
+    .cards{
+        width: 17rem;
+    }
+}
+
+/* ends */

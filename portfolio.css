@@ -1,0 +1,101 @@
+.portfolio{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px solid var(--text_color_two);
+    border-bottom: 3px solid var(--background_color);
+    padding: 1rem 0 2rem 0;
+}
+
+.portfolio h1{
+    color: var(--text_color);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.portfolio_content{
+    width: 99%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2.3rem;
+}
+
+.ports{
+    width: 35rem;
+    height: 30rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 13rem;
+    overflow-y: scroll;
+    border: 3.5px solid white;
+}
+
+.ports.portshadow{
+    box-shadow: var(--box_shadow);
+}
+
+.port_img_container{
+    width: 99%;
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ports .port_img_container img{
+    width: 98%;
+    height: 98%;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+
+@media only screen and (max-width: 1024px){
+    .ports{
+        width: 28rem;
+        height: 25rem;
+    }
+
+    .port_img_container{
+        width: 100%;
+        height: 100%;
+    }
+
+    .portfolio_content img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+@media only screen and (max-width: 1000px){
+    .portfolio{
+        height: 140rem;
+    }
+    .portfolio_content{
+        height: 139rem;
+    }
+  .ports{
+    width: 85%;
+  }
+
+}
+
+@media only screen and (max-width: 600px){
+
+    .ports{
+        width: 90%;
+    }
+}
